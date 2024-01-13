@@ -1,0 +1,13 @@
+{
+    "tipos de datos": {
+      "numero": 25,
+      "cadena": "hola",
+      "booleanos": true,
+      "undefined": null,
+    
+      "array": ["hola", "adios"],
+      "objeto": { "nombre":"Pepe",
+        "edad":25}
+    }
+  }
+  

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Infocars, guia del automovilismo </title>
+   <script src="script.js"></script>
+   <!-- <link rel="stylesheet" href="reset.css"> -->
+   <link rel="stylesheet" href="styles.css">
+   <meta name="robors" content="index, follow">
+   <meta name="theme-color" content="#8f7ada">
+   <meta name="description" content="Catalogo de coches para guiarte en una compra">
+
+   <link rel="icon" type="image/jpg" href="src/favicon2.png">
+
+   <!-- OPEN GRAPH -->
+
+   <meta name="og:description" content="Guía de compra de coches, compara y elige el mejor coche.">
+   <meta name="og:image" content="src/brands.png">
+</head>
+
+<body>
+   <header>
+      <nav>
+         <a href="#marcas">Marcas</a>
+         <a href="#fuentes">Fuentes</a>
+         <a href="www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+         <a href="tel:+34684185094">Llámanos</a>
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=weninger.fritz@gmail.com" target="_blank"
+            rel="noreferrer">Correo</a>
+         <a href="https://wa.me/34684185094?text=Me%20interesan%20vuestros%20servicios%20de%20busqueda">Whatsapp</a>
+      </nav>
+
+   </header>
+   <main>
+      <h1>Inforcars</h1>
+      <p>Esta es una web dedicada al <strong>automovilismo</strong> </p>
+      <h2 id="marcas">Marcas presentes</h2>
+      <ul>
+         <li>Toyota</li>
+         <li>Mazda</li>
+         <li>Suzuki</li>
+         <li>Honda</li>
+      </ul>
+      <img src="src/brands.png" alt="emblemas de marcas de coche">
+
+      <section>
+         <article>
+            <h2 id="fuentes">Fuentes de información</h2>
+            <h3>Webs donde recopilamos información</h3>
+            <ol>
+               <li>mobile.de</li>
+               <li>consumos.com</li>
+               <li>forocepos.es</li>
+            </ol>
+         </article>
+      </section>
+      <section>
+
+         <h2>Formulario de asesoramiento</h2>
+         <form action="/" method="post">
+            <fieldset>
+               <legend>Información personal</legend>
+               <label style="display: block;" for="nombre">Nombre: <!--hacer el estilo desde CSS -->
+                  <input type="text" id="nombre" name="name" autocomplete="name" placeholder="Juan Pérez" required>
+               </label>
+
+               <label for="correo">Correo:
+                  <input type="email" id="correo" name="correo" autocomplete="email" required placeholder="ejemplo@mail.com">
+               </label>
+            </fieldset>
+            <fieldset>
+               <legend>Criterios para elegir su vehículo</legend>
+
+               <label style="display: block;" for="min">Presupuesto mínimo: <!--estilo en css -->
+                  <input list="min-price" id="min" name="min" />
+
+                  <datalist id="min-price">
+                     <option value="2000€"></option>
+                     <option value="3000"></option>
+                     <option value="4000"></option>
+                     <option value="5000"></option>
+                     <option value="6000"></option>
+                  </datalist>
+               </label>
+
+               <label for="max-price-choice">Presupuesto máximo:
+                  <input list="linked-datalist-id" id="max-price-choice" name="max-price-choice" />
+
+                  <datalist id="linked-datalist-id">
+                     <option value="7000"></option>
+                     <option value="8000"></option>
+                     <option value="9000€"></option>
+                     <option value="10000€"></option>
+                     <option value="12000€"></option>
+                  </datalist>
+               </label>
+              
+               <label style="display: block;" for="km_input">¿Cuántos kilometros recorres al año?
+                  <input id="km_input" type="range" min="5000" max="30000"  />
+               <p>Km al año: <output id="value"></output></p></label>
+               
+               
+              
+            </fieldset>
+            <button>Envíar</button>
+         </form>
+      </section>
+
+      <section>
+         <h2>Preguntas frecuentes</h2> 
+            <details> 
+               <summary>¿Cuales son las ventajas de elegir vuestros servicios? </summary>
+               <p>Buscamos y negociamos el mejor coche para tí</p>
+               <img src="https://img.icons8.com/ios/100/sales-performance-balance-1.png" alt="hucha cerdito"/>
+                <img loading="lazy" width="64" height="64"  src="https://img.icons8.com/external-outline-lafs/64/external-car-car-dashboard-outline-part-1-outline-lafs-4.png" alt="icono seguridad"/>
+            </details>
+            
+            <details>
+               <summary>¿Cuanto tiempo tardais en encontrarme un coche? </summary>
+               <p>De media tardamos entre 2 y 3 semanas</p>
+               <img width="100" height="100" src="https://img.icons8.com/ios/100/time--v1.png" alt="time--v1"/>
+            </details>
+      </section>
+
+      <section>
+         <h3>Recursos para descargar</h3>
+         <a download href="src/coches_fiables.jpg">Lista de coches más fiables </a>
+      </section>
+   </main>
+
+   <footer>
+      <small>Infocars no trabaja bajo comisión con ninguna marca, derechos reservados.</small>
+   </footer>
+</body>
+
+</html>
